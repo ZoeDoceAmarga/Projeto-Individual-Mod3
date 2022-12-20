@@ -7,7 +7,7 @@ export function Tarefas() {
 
   function getTasks() {
     axios
-      .get("http://localhost:3200/produtos")
+      .get("https://servidor-oba-oba.onrender.com/Hamburgueres")
       .then((result) => {
         console.log(result);
         setTarefas(result.data);
@@ -18,8 +18,8 @@ export function Tarefas() {
   }
   function postTasks() {
     axios
-      .post("http://localhost:3200/produtos",{"nome" : "Programar"})
-      .get("http://localhost:3200/produtos")
+      .post("https://servidor-oba-oba.onrender.com/Hamburgueres",{"nome" : "X-Veggie"})
+      .get("https://servidor-oba-oba.onrender.com/Hamburgueres")
       .then((result) => {
         console.log(result);
         setTarefas(result.data);
@@ -31,8 +31,8 @@ export function Tarefas() {
   function deleteTasks() {
     const id = prompt("Qual id deseja deletar?")
     axios
-      .delete("http://localhost:3200/produtos/" + id)
-      .get("http://localhost:3200/produtos")
+      .delete("https://servidor-oba-oba.onrender.com/Hamburgueres/" + id)
+      .get("https://servidor-oba-oba.onrender.com/Hamburgueres")
       .then((result) => {
         console.log(result);
         setTarefas(result.data);
@@ -43,9 +43,9 @@ export function Tarefas() {
   }
   return (
     <div className="info">
-      <button className="btn-buscar btn" onClick={getTasks}>Buscar Produtos</button>
-      <button className="btn-lancar btn" onClick={postTasks}>Lançar Produtos </button>
-      <button className="btn-delete btn" onClick={deleteTasks}>Deletar Produtos </button>
+      <button className="btn-buscar btn" onClick={getTasks}>Buscar Hambúrgueres</button>
+      <button className="btn-lancar btn" onClick={postTasks}>Lançar Hambúrgueres </button>
+      <button className="btn-delete btn" onClick={deleteTasks}>Deletar Hambúrgueres </button>
 
       <ul className="produtos">
         <li className="subTitulo">Produtos</li>
