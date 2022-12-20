@@ -21,7 +21,7 @@ No projeto, utilizamos HTML5, CSS3, Reactjs.
 
 <h2> O Site </h2>
 
-<img src="https://user-images.githubusercontent.com/65381107/208683461-f98306fc-52da-4113-936b-c960bef16ed1.jpg">
+<img src="https://user-images.githubusercontent.com/65381107/208701157-b6b4f932-56d1-4783-9a99-ab494c7ba61a.jpg">
 <img src="https://user-images.githubusercontent.com/65381107/208683468-ccd54b23-43a0-4eb5-bfd1-a64fcf527408.jpg">
 
 
