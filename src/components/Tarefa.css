@@ -1,0 +1,53 @@
+.info{
+  display: grid;
+  grid-template-areas: 
+  "titulo titulo titulo titulo"
+  "btnBuscar btnBuscar btnBuscar btnBuscar "
+  "produtos produtos precos precos"
+  "btnLancar btnLancar btnLancar btnLancar"
+  "btnDelete btnDelete btnDelete btnDelete"
+  ;
+}
+.titulo{
+  grid-area: titulo;
+  text-align: center;
+  color: rgb(90, 2, 2);
+  
+}
+.btn{
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: rgb(199, 199, 199);
+  
+}
+.btn:hover{
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+}
+.btn-buscar{
+  grid-area: btnBuscar;
+}
+.btn-lancar{
+  grid-area: btnLancar;
+}
+.btn-delete{
+  grid-area: btnDelete;
+}
+
+.subTitulo{
+  margin-bottom: 10px;
+
+}
+
+.produtos{
+  grid-area: produtos;
+  margin-bottom: 50px;
+
+}
+
+.preco{
+  grid-area: precos;
+  margin-bottom: 50px;
+
+}
