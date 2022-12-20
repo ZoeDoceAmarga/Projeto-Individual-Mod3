@@ -4,8 +4,7 @@ import './App.css';
 
 import NavBar from './components/NavBar';
 
-import Form from './components/Form.jsx';
-import Header from './components/header';
+
 import NovaTarefa from './components/NovaTarefa.jsx';
 import { Tarefas } from './components/Tarefa';
 
