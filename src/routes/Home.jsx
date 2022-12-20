@@ -13,7 +13,7 @@ const Home = () => {
   
     function getTasks() {
       axios
-        .get("http://localhost:3200/produtos")
+        .get("https://servidor-oba-oba.onrender.com/hamburgueres")
         .then((result) => {
           console.log(result);
           setTarefas(result.data);
@@ -24,7 +24,7 @@ const Home = () => {
     }
     function postTasks() {
       axios
-        .post("http://localhost:3200/produtos",{"nome" : "Programar"})
+        .post("https://servidor-oba-oba.onrender.com/hamburgueres",{"nome" : "Programar"})
         .get("http://localhost:3200/produtos")
         .then((result) => {
           console.log(result);
@@ -37,8 +37,8 @@ const Home = () => {
     function deleteTasks() {
       const id = prompt("Qual id deseja deletar?")
       axios
-        .delete("http://localhost:3200/produtos/" + id)
-        .get("http://localhost:3200/produtos")
+        .delete("https://servidor-oba-oba.onrender.com/hamburgueres/" + id)
+        .get("https://servidor-oba-oba.onrender.com/hamburgueres")
         .then((result) => {
           console.log(result);
           setTarefas(result.data);
